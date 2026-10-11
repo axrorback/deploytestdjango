@@ -1,0 +1,20 @@
+[project]
+name = "login"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "axrorback", email = "axrorback@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "django>=6.1.2",
+    "dotenv>=0.9.9",
+]
+
+[project.scripts]
+login = "login:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
